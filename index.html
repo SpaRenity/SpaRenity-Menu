@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpaRenity Nails & Herbal — Services Menu</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #f9f1eb; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding: 16px; }
+    .sr-menu { max-width: 480px; margin: 0 auto; }
+    .sr-header { background: #993556; border-radius: 12px 12px 0 0; padding: 16px; text-align: center; }
+    .sr-header h1 { color: #fff; font-size: 17px; font-weight: 600; margin: 0 0 3px; }
+    .sr-header p { color: #F4C0D1; font-size: 12px; margin: 0; }
+    .sr-nav { background: #fbeef4; border: 0.5px solid #F4C0D1; border-top: none; padding: 10px 12px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .sr-nav-btn { font-size: 11px; font-weight: 500; padding: 5px 10px; border-radius: 20px; border: 0.5px solid #ED93B1; background: #fff; color: #993556; cursor: pointer; white-space: nowrap; text-decoration: none; display: inline-block; }
+    .sr-nav-btn:hover { background: #993556; color: #fff; border-color: #993556; }
+    .sr-body { background: #fff; border: 0.5px solid #F4C0D1; border-top: none; border-radius: 0 0 12px 12px; padding: 0 16px 4px; }
+    .sr-cat { font-size: 10px; font-weight: 600; color: #993556; text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 8px; display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid #F4C0D1; }
+    .sr-cat-first { font-size: 10px; font-weight: 600; color: #993556; text-transform: uppercase; letter-spacing: 0.08em; margin: 12px 0 8px; display: flex; align-items: center; justify-content: space-between; }
+    .sr-sub-cat { font-size: 10px; font-weight: 600; color: #993556; text-transform: uppercase; letter-spacing: 0.07em; margin: 12px 0 5px; }
+    .sr-sub-cat-first { font-size: 10px; font-weight: 600; color: #993556; text-transform: uppercase; letter-spacing: 0.07em; margin: 0 0 5px; }
+    .sr-item { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 8px; }
+    .sr-item:last-child { margin-bottom: 0; }
+    .sr-left { flex: 1; min-width: 0; }
+    .sr-name { font-size: 13px; font-weight: 600; color: #2a1a1a; margin: 0; }
+    .sr-meta { font-size: 11px; color: #9a6070; margin: 2px 0 0; font-style: italic; }
+    .sr-price { font-size: 12px; font-weight: 600; color: #72243E; white-space: nowrap; padding-top: 2px; }
+    .sr-badge { display: inline-block; font-size: 9px; font-weight: 600; background: #FBEAF0; color: #993556; border-radius: 20px; padding: 2px 7px; margin-left: 5px; vertical-align: middle; }
+    .sr-simple-row { display: flex; justify-content: space-between; font-size: 12px; color: #2a1a1a; padding: 3px 0; border-bottom: 1px dotted #F4C0D1; }
+    .sr-simple-row:last-of-type { border-bottom: none; }
+    .sr-simple-price { font-size: 11px; color: #72243E; font-weight: 600; }
+    .sr-addon-note { font-size: 11px; color: #9a6070; font-style: italic; margin: 8px 0 0; }
+    .sr-cta { margin: 14px 0 8px; background: #993556; border-radius: 8px; padding: 13px; text-align: center; cursor: pointer; text-decoration: none; display: block; }
+    .sr-cta p { color: #fff; font-size: 14px; font-weight: 600; margin: 0 0 2px; }
+    .sr-cta span { color: #F4C0D1; font-size: 11px; }
+    .sr-website-btn { margin: 0 0 8px; background: #fff; border: 1px solid #993556; border-radius: 8px; padding: 11px; text-align: center; cursor: pointer; text-decoration: none; display: block; }
+    .sr-website-btn p { color: #993556; font-size: 13px; font-weight: 600; margin: 0; }
+    .sr-divider { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+    .sr-divider-line { flex: 1; height: 0.5px; background: #F4C0D1; }
+    .sr-divider-text { font-size: 10px; color: #9a6070; }
+    .sr-hours { text-align: center; padding: 8px 0 14px; }
+    .sr-hours p { font-size: 12px; color: #9a6070; margin: 2px 0; }
+    .sr-hours .phone { font-size: 14px; font-weight: 600; color: #2a1a1a; margin: 0 0 4px; }
+    .back-top { font-size: 10px; color: #993556; cursor: pointer; font-weight: 500; text-decoration: none; }
+    .back-top-bar { text-align: center; padding: 12px 0 4px; }
+    .back-top-full { display: inline-block; font-size: 11px; font-weight: 500; color: #993556; cursor: pointer; padding: 6px 16px; border-radius: 20px; border: 0.5px solid #ED93B1; background: #fff; text-decoration: none; }
+  </style>
+</head>
+<body>
+<div class="sr-menu">
+
+  <div class="sr-header">
+    <h1>SpaRenity Nails &amp; Herbal</h1>
+    <p>Kyle, TX &mdash; Where natural beauty meets real value</p>
+  </div>
+
+  <div class="sr-nav" id="sr-top">
+    <a class="sr-nav-btn" href="#manicures">Manicures</a>
+    <a class="sr-nav-btn" href="#pedicures">Pedicures</a>
+    <a class="sr-nav-btn" href="#headspa">Head Spa</a>
+    <a class="sr-nav-btn" href="#nails">Nail Extensions</a>
+    <a class="sr-nav-btn" href="#lashes">Lashes &amp; Brows</a>
+    <a class="sr-nav-btn" href="#waxing">Waxing</a>
+    <a class="sr-nav-btn" href="#kids">Kids</a>
+  </div>
+
+  <div class="sr-body">
+
+    <p class="sr-cat-first" id="manicures">Manicures <a class="back-top" href="#sr-top">Back to top</a></p>
+    <div class="sr-item">
+      <div class="sr-left">
+        <p class="sr-name">SpaRenity Manicure <span class="sr-badge">Popular</span></p>
+        <p class="sr-meta">Herbal-organic blend with hot rocks &mdash; 40 min</p>
+      </div>
+      <span class="sr-price">From $35</span>
+    </div>
+    <div class="sr-item">
+      <div class="sr-left">
+        <p class="sr-name">Herbal Manicure</p>
+        <p class="sr-meta">Mud mask + cooling gel &mdash; 40 min</p>
+      </div>
+      <span class="sr-price">From $30</span>
+    </div>
+    <div class="sr-item">
+      <div class="sr-left">
+        <p class="sr-name">Organic Manicure</p>
+        <p class="sr-meta">Mud mask + paraffin wax &mdash; 30 min</p>
+      </div>
+      <span class="sr-price">From $25</span>
+    </div>
+    <div class="sr-item">
+      <div class="sr-left">
+        <p class="sr-name">Classic Manicure</p>
+        <p class="sr-meta">Clean, natural grooming for healthy nails &mdash; 20 min</p>
+      </div>
+      <span class="sr-price">From $20</span>
+    </div>
+    <p class="sr-addon-note">Gel upgrade available on all manicures</p>
+
+    <p class="sr-cat" id="pedicures">Pedicures <a class="back-top" href="#sr-top">Back to top</a></p>
+    <div class="sr-item">
+      <div class="sr-left">
+        <p class="sr-name">Volcano Pedicure <span class="sr-badge">Popular</span></p>
+        <p class="sr-meta">Volcanic detox + foot reflexology &mdash; 60 min</p>
+      </div>
+      <span class="sr-price">From $75</span>
+    </div>
+    <div class="sr-item">
+      <div class="sr-left">
+        <p class="sr-name">Aloe Jelly Pedicure</p>
+        <p class="sr-meta">Aloe jelly immersion + hydration &mdash; 60 min</p>
+      </div>
+      <span class="sr-price">From $65</span>
+    </div>
+    <div class="sr-item">
+      <div class="sr-left">
+        <p class="sr-name">SpaRenity Pedicure</p>
+        <p class="sr-meta">Organic + herbal blend with hot stones &mdash; 60 min</p>
+      </div>
+      <span class="sr-price">From $55</span>
+    </div>
+    <div class="sr-item">
+      <div class="sr-left">
+        <p class="sr-name">Herbal Pedicure</p>
+        <p class="sr-meta">Sugar scrub, mud mask + cooling gel &mdash; 60 min</p>
+      </div>
+      <span class="sr-price">From $45</span>
+    </div>
+    <div class="sr-item">
+      <div class="sr-left">
+        <p class="sr-name">Organic Pedicure</p>
+        <p class="sr-meta">Sugar scrub + paraffin wax &mdash; 40 min</p>
+      </div>
+      <span class="sr-price">From $40</span>
+    </div>
+    <div class="sr-item">
+      <div class="sr-left">
+        <p class="sr-name">Classic Pedicure</p>
+        <p class="sr-meta">Basic grooming for clean, healthy feet &mdash; 30 min</p>
+      </div>
+      <span class="sr-price">From $30</span>
+    </div>
+    <div class="sr-item">
+      <div class="sr-left">
+        <p class="sr-name">Express Pedicure</p>
+        <p class="sr-meta">Quick essential grooming, no foot reflexology &mdash; 20 min</p>
+      </div>
+      <span class="sr-price">From $25</span>
+    </div>
+    <p class="sr-addon-note">Gel upgrade available on all pedicures</p>
+
+    <p class="sr-cat" id="headspa">Head Spa <a class="back-top" href="#sr-top">Back to top</a></p>
+    <div class="sr-item">
+      <div class="sr-left">
+        <p class="sr-name">Essential Reset</p>
+        <p class="sr-meta">Deep cleansing scalp massage &mdash; 45 min</p>
+      </div>
+      <span class="sr-price">$55</span>
+    </div>
+    <div class="sr-item">
+      <div class="sr-left">
+        <p class="sr-name">Signature Restoration</p>
+        <p class="sr-meta">Detox wash + hydrating face mask &mdash; 60 min</p>
+      </div>
+      <span class="sr-price">$65</span>
+    </div>
+    <div class="sr-item">
+      <div class="sr-left">
+        <p class="sr-name">Deep Relief <span class="sr-badge">Best Value</span></p>
+        <p class="sr-meta">Hot towel, face mask + full upper body decompression &mdash; 75 min</p>
+      </div>
+      <span class="sr-price">$95</span>
+    </div>
+    <div class="sr-item">
+      <div class="sr-left">
+        <p class="sr-name">Ultimate Indulgence</p>
+        <p class="sr-meta">Hot stone massage, face lifting + paraffin hand treatment &mdash; 90 min</p>
+      </div>
+      <span class="sr-price">$120</span>
+    </div>
+
+    <p class="sr-cat" id="nails">Nail Extensions <a class="back-top" href="#sr-top">Back to top</a></p>
+    <p class="sr-sub-cat-first">Acrylic</p>
+    <div class="sr-simple-row"><span>Overlay</span><span class="sr-simple-price">From $30 / Fill $25</span></div>
+    <div class="sr-simple-row"><span>Color Powder</span><span class="sr-simple-price">From $45 / Fill $35+</span></div>
+    <div class="sr-simple-row"><span>Pink &amp; White</span><span class="sr-simple-price">From $55 / Fill $45+</span></div>
+    <div class="sr-simple-row"><span>Color Tip</span><span class="sr-simple-price">From $40 / Fill $30+</span></div>
+    <p class="sr-sub-cat">Dip Powder</p>
+    <div class="sr-simple-row"><span>Overlay</span><span class="sr-simple-price">$35</span></div>
+    <div class="sr-simple-row"><span>Color Powder</span><span class="sr-simple-price">$45+</span></div>
+    <div class="sr-simple-row"><span>Pink &amp; White</span><span class="sr-simple-price">$55+</span></div>
+    <p class="sr-sub-cat">Gel X &amp; Builder Gel</p>
+    <div class="sr-simple-row"><span>Gel X Full Set</span><span class="sr-simple-price">From $40 / Fill $35</span></div>
+    <div class="sr-simple-row"><span>Builder Gel</span><span class="sr-simple-price">Ask us</span></div>
+    <p class="sr-addon-note">Nail art, French, and design add-ons available</p>
+
+    <p class="sr-cat" id="lashes">Lashes &amp; Brows <a class="back-top" href="#sr-top">Back to top</a></p>
+    <p class="sr-sub-cat-first">Lash Extensions</p>
+    <div class="sr-simple-row"><span>Classic</span><span class="sr-simple-price">Full $75 / 2wk $50 / 3wk $65</span></div>
+    <div class="sr-simple-row"><span>Hybrid</span><span class="sr-simple-price">Full $100 / 2wk $65 / 3wk $80</span></div>
+    <div class="sr-simple-row"><span>Volume</span><span class="sr-simple-price">Full $150 / 2wk $100 / 3wk $120</span></div>
+    <div class="sr-simple-row"><span>Lash Lift</span><span class="sr-simple-price">$60</span></div>
+    <div class="sr-simple-row"><span>Removal</span><span class="sr-simple-price">$15</span></div>
+    <p class="sr-sub-cat">Eyebrows</p>
+    <div class="sr-simple-row"><span>Wax</span><span class="sr-simple-price">$10</span></div>
+    <div class="sr-simple-row"><span>Tint</span><span class="sr-simple-price">$15</span></div>
+    <div class="sr-simple-row"><span>Mapping</span><span class="sr-simple-price">$10</span></div>
+    <div class="sr-simple-row"><span>Package</span><span class="sr-simple-price">$30</span></div>
+    <div class="sr-simple-row"><span>Microblading</span><span class="sr-simple-price">$425</span></div>
+    <div class="sr-simple-row"><span>Microblading Touch-Up</span><span class="sr-simple-price">$200</span></div>
+
+    <p class="sr-cat" id="waxing">Waxing <a class="back-top" href="#sr-top">Back to top</a></p>
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 4px 16px;">
+      <div class="sr-simple-row"><span>Full Face</span><span class="sr-simple-price">$35</span></div>
+      <div class="sr-simple-row"><span>Half Arms</span><span class="sr-simple-price">$25</span></div>
+      <div class="sr-simple-row"><span>Upper Lip</span><span class="sr-simple-price">$8</span></div>
+      <div class="sr-simple-row"><span>Full Arms</span><span class="sr-simple-price">$40</span></div>
+      <div class="sr-simple-row"><span>Chin</span><span class="sr-simple-price">$10</span></div>
+      <div class="sr-simple-row"><span>Under Arms</span><span class="sr-simple-price">$15</span></div>
+      <div class="sr-simple-row"><span>Bikini Line</span><span class="sr-simple-price">$25</span></div>
+      <div class="sr-simple-row"><span>Half Legs</span><span class="sr-simple-price">$45</span></div>
+      <div class="sr-simple-row"><span>Bikini Plus</span><span class="sr-simple-price">$40</span></div>
+      <div class="sr-simple-row"><span>Full Legs</span><span class="sr-simple-price">$70</span></div>
+      <div class="sr-simple-row"><span>Brazilian</span><span class="sr-simple-price">$55</span></div>
+      <div class="sr-simple-row"><span>Back / Chest</span><span class="sr-simple-price">$50 / $45</span></div>
+    </div>
+
+    <p class="sr-cat" id="kids">Kids <a class="back-top" href="#sr-top">Back to top</a></p>
+    <div class="sr-simple-row"><span>Manicure</span><span class="sr-simple-price">$12 / $27</span></div>
+    <div class="sr-simple-row"><span>Pedicure</span><span class="sr-simple-price">$20 / $35</span></div>
+    <div class="sr-simple-row"><span>Polish</span><span class="sr-simple-price">$8 / $20</span></div>
+
+    <div class="back-top-bar">
+      <a class="back-top-full" href="#sr-top">Back to top</a>
+    </div>
+
+    <a class="sr-cta" href="https://sparenitynailsherbal.com/booking/">
+      <p>Book Your Appointment</p>
+      <span>sparenitynailsherbal.com/booking</span>
+    </a>
+
+    <a class="sr-website-btn" href="https://sparenitynailsherbal.com">
+      <p>🌿 Visit Our Website</p>
+    </a>
+
+    <div class="sr-divider">
+      <div class="sr-divider-line"></div>
+      <span class="sr-divider-text">or call us</span>
+      <div class="sr-divider-line"></div>
+    </div>
+
+    <div class="sr-hours">
+      <p class="phone">(512) 262-0483</p>
+      <p>Mon&ndash;Sat: 9:30 AM &ndash; 7:30 PM</p>
+      <p>Sun: 11:30 AM &ndash; 6 PM</p>
+      <p>5695 Kyle Pkwy, Suite 120 &mdash; Kyle, TX 78640</p>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
